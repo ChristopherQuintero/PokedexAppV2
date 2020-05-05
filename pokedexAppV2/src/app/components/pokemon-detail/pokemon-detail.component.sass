@@ -38,6 +38,10 @@ $colorSec: #fdcd3b
 $salmon: #feb47b
 $salmonSec: #ff7e5f
 
+.walldetail
+  background-image: url('../../../assets/images/wall2.png')
+  background-position: center
+  background-size: cover
 
 .pokemon-view
 
@@ -46,12 +50,10 @@ $salmonSec: #ff7e5f
       display: none
 
 
-
   @media screen and(min-width: $layout-xs)
     .add-detail
       bottom: 30px
       right: 30px
-
 
 
   .container-form
@@ -62,12 +64,13 @@ $salmonSec: #ff7e5f
 
     .style-input
       padding: 10px 25px
-      border: 2px solid $colorGreen
+      border: 2px solid #b3b745
       border-radius: 10px
       font-size: 14px
       font-weight: 400
-      color: $colorGreen
+      color: #b3b745
       width: 220px
+      background-color: #343a40
 
       &:focus
         outline: none
@@ -142,6 +145,19 @@ $salmonSec: #ff7e5f
 
     .input-form
       width: 100%
+
+  .button-style
+    padding: 10px
+    border-radius: 8px
+    border: none
+    background-color: #343a40
+    color: #b3b745
+    width: 200px
+    font-size: 20px
+    border: 2px solid #b3b745
+
+    &:focus
+      outline: none
 
 
 

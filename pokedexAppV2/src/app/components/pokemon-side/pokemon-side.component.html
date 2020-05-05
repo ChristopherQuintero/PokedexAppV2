@@ -22,7 +22,7 @@
       <div class="column">
         <h1 class="title-style-h1">Type</h1>
         <div *ngFor="let item of pokemon?.types" class="container-item-type">
-          {{ item.type?.name }}
+          <mat-chip color="primary" selected>{{ item.type?.name }}</mat-chip>
         </div>
       </div>
       <div class="column">

@@ -1,7 +1,8 @@
+<div class="walldetail">
 <div class="pokemon-view">
   <div class="container-form">
     <form (submit)="submitPokemon($event)">
-      <input class="style-input" type="text" placeholder="Busca un pokemon nombre o id" name="id">
+      <input class="style-input" type="text" placeholder="Buscar por nombre o id" name="id">
     </form>
   </div>
   <div class="section group">
@@ -13,6 +14,8 @@
     </div>
   </div>
   <div style="text-align: center;">
-    <button [routerLink]="['/']">BACK</button>
+    <button class="button-style" [routerLink]="['/']">Volver</button>
   </div>
+  <br>
+</div>
 </div>

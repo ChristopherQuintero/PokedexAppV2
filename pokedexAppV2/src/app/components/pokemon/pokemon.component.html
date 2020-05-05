@@ -1,7 +1,7 @@
 <div class="wall">
 <div class="pokemon-view">
   <div class="container-input">
-    <input type="text" placeholder="buscar pokemon" [(ngModel)]="query">
+    <input type="text" placeholder="Buscar Pokemon" [(ngModel)]="query">
   </div>
   <div class="grid" *ngIf="pokemon">
     <div class="column" *ngFor="let item of pokemon | search: query" [routerLink]="['/detail', item?.name]">
@@ -12,7 +12,7 @@
   </div>
   <br>
   <div class="container-button">
-    <button class="button-style" (click)="onSubmit()">Mostrar Más !</button>
+    <button class="button-style" (click)="onSubmit()">Mostrar Más </button>
   </div>
 </div>
 </div>
