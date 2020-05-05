@@ -26,7 +26,7 @@ export class PokemonComponent implements OnInit {
   }
 
   onSubmit() {
-    this.offset += 20;
+    this.offset += 50;
     this.getPokemons();
   }
 
