@@ -10,7 +10,6 @@ export class PokemonSideComponent implements OnInit {
 
   @Input('pokemon') pokemon: Pokemon;
 
-
   constructor() { }
 
   ngOnInit() {

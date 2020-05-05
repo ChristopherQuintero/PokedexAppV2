@@ -23,6 +23,7 @@ export class PokemonComponent implements OnInit {
 
   ngOnInit() {
     this.getPokemons();
+    this.getAllPokemons();
   }
 
   onSubmit() {
@@ -30,10 +31,19 @@ export class PokemonComponent implements OnInit {
     this.getPokemons();
   }
 
+  getAllPokemons() {
+    this.pokemonService
+      .getAllPokemon()
+      .subscribe((data: Pokemon[]) => {
+        console.log('Data:', data);
+      });
+  }
+
   getPokemons() {
     this.pokemonService
       .getPokemon(this.offset, this.limit)
       .subscribe((data: Pokemon[]) => {
+        //console.log('Data:', data);
         this.pokemons = data;
         Object.keys(this.pokemons.results).map(key => {
           this.showPokemon(this.pokemons.results[key].name);

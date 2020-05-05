@@ -12,6 +12,8 @@ import { PokemonSideComponent } from './components/pokemon-side/pokemon-side.com
 import { PokemonSideBarComponent } from './components/pokemon-side-bar/pokemon-side-bar.component';
 import { PokemonService } from './services/pokemon.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     PokemonDetailComponent,
     SearchPipe,
     PokemonSideComponent,
-    PokemonSideBarComponent
+    PokemonSideBarComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
